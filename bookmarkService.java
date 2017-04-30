@@ -1,4 +1,4 @@
-package manotifications;
+
 
 import android.app.IntentService;
 import android.app.NotificationManager;
