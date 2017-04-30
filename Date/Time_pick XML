@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.binila.datetime.MainActivity">
+
+
+<Button
+    android:id="@+id/b_pick"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DATE"
+    tools:layout_editor_absoluteX="29dp"
+    tools:layout_editor_absoluteY="168dp"
+    android:layout_alignTop="@+id/t_date"
+    android:layout_alignLeft="@+id/b_time"
+    android:layout_alignStart="@+id/b_time" />
+
+<Button
+    android:id="@+id/b_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TIME"
+    tools:layout_editor_absoluteX="29dp"
+    tools:layout_editor_absoluteY="258dp"
+    android:layout_marginRight="33dp"
+    android:layout_marginEnd="33dp"
+    android:layout_alignBaseline="@+id/t_result"
+    android:layout_alignBottom="@+id/t_result"
+    android:layout_toLeftOf="@+id/t_result"
+    android:layout_toStartOf="@+id/t_result" />
+
+<EditText
+    android:id="@+id/t_result"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="time"
+    app:layout_constraintLeft_toRightOf="@+id/b_time"
+    tools:layout_constraintLeft_toRightOf="@+id/b_time"
+    tools:layout_editor_absoluteY="263dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="56dp"
+    android:layout_above="@+id/t_date"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:id="@+id/t_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="date"
+    tools:layout_editor_absoluteX="153dp"
+    tools:layout_editor_absoluteY="168dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignLeft="@+id/t_result"
+    android:layout_alignStart="@+id/t_result"
+    android:layout_marginLeft="11dp"
+    android:layout_marginStart="11dp"
+    android:layout_marginBottom="186dp" />
+
+</RelativeLayout>
